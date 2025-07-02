@@ -1,0 +1,40 @@
+# Anchor Documentation Coverage Analyzer Configuration
+
+# Пути к исходному коду
+source_paths:
+  - "src/"
+
+# Пути к документации
+docs_paths:
+  - "docs/"
+
+# Исключения (папки/файлы для игнорирования)
+exclude_paths:
+  - "vendor/"
+  - "tests/"
+  - "node_modules/"
+
+# Минимальное покрытие документацией (в процентах)
+minimum_coverage: 100.0
+
+# Что учитывать при расчете покрытия (classes, elements)
+# classes - только классы, интерфейсы и трейты
+# elements - все элементы (классы + методы + свойства)
+coverage_scope: "classes"
+
+# Формат вывода по умолчанию (console, json, html)
+output_format: "console"
+
+# Файл для сохранения отчета (опционально)
+# output_file: "coverage-report.html"
+
+# Дополнительные настройки
+settings:
+  # Учитывать ли приватные методы
+  include_private: false
+  
+  # Учитывать ли геттеры и сеттеры
+  include_getters_setters: true
+  
+  # Минимальная длина имени метода для анализа
+  min_method_name_length: 3 

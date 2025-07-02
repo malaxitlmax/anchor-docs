@@ -1,0 +1,4028 @@
+{
+    "summary": {
+        "coverage_percentage": 31.88405797101449,
+        "total_elements": 69,
+        "documented_elements": 22,
+        "undocumented_elements": 47,
+        "broken_references": 57
+    },
+    "coverage_by_type": {
+        "class": {
+            "total": 0,
+            "documented": 0,
+            "undocumented": 0,
+            "percentage": 100
+        },
+        "interface": {
+            "total": 0,
+            "documented": 0,
+            "undocumented": 0,
+            "percentage": 100
+        },
+        "trait": {
+            "total": 0,
+            "documented": 0,
+            "undocumented": 0,
+            "percentage": 100
+        },
+        "method": {
+            "total": 69,
+            "documented": 22,
+            "undocumented": 47,
+            "percentage": 31.88405797101449
+        },
+        "function": {
+            "total": 0,
+            "documented": 0,
+            "undocumented": 0,
+            "percentage": 100
+        },
+        "property": {
+            "total": 0,
+            "documented": 0,
+            "undocumented": 0,
+            "percentage": 100
+        }
+    },
+    "undocumented_elements": {
+        "8": {
+            "name": "__construct",
+            "type": "method",
+            "file": "src/Config/Configuration.php",
+            "line": 17,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::__construct"
+        },
+        "9": {
+            "name": "fromArray",
+            "type": "method",
+            "file": "src/Config/Configuration.php",
+            "line": 35,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "public",
+                "static"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::fromArray"
+        },
+        "10": {
+            "name": "getProjectRoot",
+            "type": "method",
+            "file": "src/Config/Configuration.php",
+            "line": 48,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::getProjectRoot"
+        },
+        "11": {
+            "name": "getSourcePaths",
+            "type": "method",
+            "file": "src/Config/Configuration.php",
+            "line": 53,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::getSourcePaths"
+        },
+        "12": {
+            "name": "getDocsPaths",
+            "type": "method",
+            "file": "src/Config/Configuration.php",
+            "line": 58,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::getDocsPaths"
+        },
+        "13": {
+            "name": "getExcludePaths",
+            "type": "method",
+            "file": "src/Config/Configuration.php",
+            "line": 63,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::getExcludePaths"
+        },
+        "14": {
+            "name": "getOutputFormat",
+            "type": "method",
+            "file": "src/Config/Configuration.php",
+            "line": 68,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::getOutputFormat"
+        },
+        "15": {
+            "name": "getOutputFile",
+            "type": "method",
+            "file": "src/Config/Configuration.php",
+            "line": 73,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::getOutputFile"
+        },
+        "35": {
+            "name": "__construct",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 30,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::__construct"
+        },
+        "37": {
+            "name": "getCodeElements",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 56,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::getCodeElements"
+        },
+        "38": {
+            "name": "getDocumentationReferences",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 62,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::getDocumentationReferences"
+        },
+        "39": {
+            "name": "getCoveragePercentage",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 67,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::getCoveragePercentage"
+        },
+        "40": {
+            "name": "getTotalElements",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 72,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::getTotalElements"
+        },
+        "41": {
+            "name": "getDocumentedElements",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 77,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::getDocumentedElements"
+        },
+        "42": {
+            "name": "getUndocumentedElements",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 82,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::getUndocumentedElements"
+        },
+        "43": {
+            "name": "getUndocumentedCodeElements",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 88,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::getUndocumentedCodeElements"
+        },
+        "44": {
+            "name": "getBrokenReferences",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 94,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::getBrokenReferences"
+        },
+        "45": {
+            "name": "hasBrokenReferences",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 99,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::hasBrokenReferences"
+        },
+        "47": {
+            "name": "getCoverageByType",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 109,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::getCoverageByType"
+        },
+        "57": {
+            "name": "__construct",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 26,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::__construct"
+        },
+        "59": {
+            "name": "getType",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 51,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::getType"
+        },
+        "60": {
+            "name": "getFile",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 56,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::getFile"
+        },
+        "61": {
+            "name": "getLine",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 61,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::getLine"
+        },
+        "62": {
+            "name": "getNamespace",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 66,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::getNamespace"
+        },
+        "63": {
+            "name": "getParentClass",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 71,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::getParentClass"
+        },
+        "64": {
+            "name": "getModifiers",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 76,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::getModifiers"
+        },
+        "65": {
+            "name": "isDocumented",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 81,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::isDocumented"
+        },
+        "66": {
+            "name": "setDocumented",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 86,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::setDocumented"
+        },
+        "67": {
+            "name": "getFullyQualifiedName",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 91,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::getFullyQualifiedName"
+        },
+        "68": {
+            "name": "isPublic",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 104,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::isPublic"
+        },
+        "70": {
+            "name": "isProtected",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 114,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::isProtected"
+        },
+        "71": {
+            "name": "shouldBeDocumented",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 119,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::shouldBeDocumented"
+        },
+        "80": {
+            "name": "__construct",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 17,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::__construct"
+        },
+        "81": {
+            "name": "getSourceFile",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 35,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::getSourceFile"
+        },
+        "82": {
+            "name": "getSourceLine",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 40,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::getSourceLine"
+        },
+        "83": {
+            "name": "getReferenceType",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 45,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::getReferenceType"
+        },
+        "84": {
+            "name": "getReferencedElement",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 50,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::getReferencedElement"
+        },
+        "85": {
+            "name": "getReferencedFile",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 55,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::getReferencedFile"
+        },
+        "86": {
+            "name": "getReferencedLine",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 60,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::getReferencedLine"
+        },
+        "87": {
+            "name": "isValid",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 65,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::isValid"
+        },
+        "88": {
+            "name": "setValid",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 70,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::setValid"
+        },
+        "89": {
+            "name": "setReferencedLocation",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 75,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::setReferencedLocation"
+        },
+        "92": {
+            "name": "generateJsonReport",
+            "type": "method",
+            "file": "src/Report/ReportGenerator.php",
+            "line": 103,
+            "namespace": "Anchor\\DocsCoverage\\Report",
+            "parent_class": "ReportGenerator",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Report\\ReportGenerator::generateJsonReport"
+        },
+        "93": {
+            "name": "generateHtmlReport",
+            "type": "method",
+            "file": "src/Report/ReportGenerator.php",
+            "line": 123,
+            "namespace": "Anchor\\DocsCoverage\\Report",
+            "parent_class": "ReportGenerator",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Report\\ReportGenerator::generateHtmlReport"
+        },
+        "133": {
+            "name": "__construct",
+            "type": "method",
+            "file": "src/Console/Application.php",
+            "line": 12,
+            "namespace": "Anchor\\DocsCoverage\\Console",
+            "parent_class": "Application",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Console\\Application::__construct"
+        },
+        "135": {
+            "name": "configure",
+            "type": "method",
+            "file": "src/Console/Command/AnalyzeCommand.php",
+            "line": 27,
+            "namespace": "Anchor\\DocsCoverage\\Console\\Command",
+            "parent_class": "AnalyzeCommand",
+            "modifiers": [
+                "protected"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Console\\Command\\AnalyzeCommand::configure"
+        },
+        "136": {
+            "name": "execute",
+            "type": "method",
+            "file": "src/Console/Command/AnalyzeCommand.php",
+            "line": 56,
+            "namespace": "Anchor\\DocsCoverage\\Console\\Command",
+            "parent_class": "AnalyzeCommand",
+            "modifiers": [
+                "protected"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Console\\Command\\AnalyzeCommand::execute"
+        }
+    },
+    "broken_references": {
+        "0": {
+            "source_file": "docs/project-summary.md",
+            "source_line": 5,
+            "reference_type": "class",
+            "referenced_element": "PHPStan",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "8": {
+            "source_file": "docs/project-summary.md",
+            "source_line": 61,
+            "reference_type": "class",
+            "referenced_element": "YAML",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "9": {
+            "source_file": "docs/project-summary.md",
+            "source_line": 117,
+            "reference_type": "class",
+            "referenced_element": "GitHub",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "10": {
+            "source_file": "docs/project-summary.md",
+            "source_line": 118,
+            "reference_type": "class",
+            "referenced_element": "GitLab",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "11": {
+            "source_file": "docs/project-summary.md",
+            "source_line": 127,
+            "reference_type": "class",
+            "referenced_element": "StructuredText",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "12": {
+            "source_file": "docs/project-summary.md",
+            "source_line": 128,
+            "reference_type": "class",
+            "referenced_element": "AsciiDoc",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "13": {
+            "source_file": "docs/project-summary.md",
+            "source_line": 129,
+            "reference_type": "class",
+            "referenced_element": "PHPDoc",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "14": {
+            "source_file": "docs/project-summary.md",
+            "source_line": 137,
+            "reference_type": "class",
+            "referenced_element": "PHPStorm",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "15": {
+            "source_file": "docs/examples.md",
+            "source_line": 66,
+            "reference_type": "class",
+            "referenced_element": "GitHub",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "16": {
+            "source_file": "docs/examples.md",
+            "source_line": 99,
+            "reference_type": "class",
+            "referenced_element": "GitLab",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "17": {
+            "source_file": "docs/examples.md",
+            "source_line": 130,
+            "reference_type": "function",
+            "referenced_element": "stage",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "18": {
+            "source_file": "docs/examples.md",
+            "source_line": 136,
+            "reference_type": "function",
+            "referenced_element": "stage",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "19": {
+            "source_file": "docs/examples.md",
+            "source_line": 143,
+            "reference_type": "function",
+            "referenced_element": "publishHTML",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "20": {
+            "source_file": "docs/examples.md",
+            "source_line": 145,
+            "reference_type": "class",
+            "referenced_element": "LinkToLastBuild",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "30": {
+            "source_file": "docs/examples.md",
+            "source_line": 187,
+            "reference_type": "function",
+            "referenced_element": "analyze",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "32": {
+            "source_file": "docs/examples.md",
+            "source_line": 191,
+            "reference_type": "class",
+            "referenced_element": "ConsoleReport",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "33": {
+            "source_file": "docs/examples.md",
+            "source_line": 191,
+            "reference_type": "class",
+            "referenced_element": "MinimumCoverage",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "36": {
+            "source_file": "docs/examples.md",
+            "source_line": 191,
+            "reference_type": "function",
+            "referenced_element": "generateConsoleReport",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "37": {
+            "source_file": "docs/examples.md",
+            "source_line": 191,
+            "reference_type": "function",
+            "referenced_element": "getMinimumCoverage",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "38": {
+            "source_file": "docs/examples.md",
+            "source_line": 196,
+            "reference_type": "class",
+            "referenced_element": "MinimumCoverage",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "41": {
+            "source_file": "docs/examples.md",
+            "source_line": 196,
+            "reference_type": "function",
+            "referenced_element": "isSuccessful",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "42": {
+            "source_file": "docs/examples.md",
+            "source_line": 196,
+            "reference_type": "function",
+            "referenced_element": "getMinimumCoverage",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "43": {
+            "source_file": "docs/examples.md",
+            "source_line": 200,
+            "reference_type": "function",
+            "referenced_element": "exit",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "50": {
+            "source_file": "docs/examples.md",
+            "source_line": 224,
+            "reference_type": "class",
+            "referenced_element": "UserById",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "51": {
+            "source_file": "docs/examples.md",
+            "source_line": 224,
+            "reference_type": "function",
+            "referenced_element": "getUserById",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "53": {
+            "source_file": "docs/examples.md",
+            "source_line": 225,
+            "reference_type": "method",
+            "referenced_element": "createInstance",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "54": {
+            "source_file": "docs/examples.md",
+            "source_line": 225,
+            "reference_type": "function",
+            "referenced_element": "createInstance",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "55": {
+            "source_file": "docs/examples.md",
+            "source_line": 242,
+            "reference_type": "function",
+            "referenced_element": "array_filter",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "56": {
+            "source_file": "docs/examples.md",
+            "source_line": 242,
+            "reference_type": "function",
+            "referenced_element": "function",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "58": {
+            "source_file": "docs/examples.md",
+            "source_line": 244,
+            "reference_type": "function",
+            "referenced_element": "preg_match",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "59": {
+            "source_file": "docs/examples.md",
+            "source_line": 244,
+            "reference_type": "function",
+            "referenced_element": "getName",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "61": {
+            "source_file": "docs/examples.md",
+            "source_line": 249,
+            "reference_type": "function",
+            "referenced_element": "isPrivate",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "69": {
+            "source_file": "docs/user-service.md",
+            "source_line": 13,
+            "reference_type": "class",
+            "referenced_element": "UserById",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "70": {
+            "source_file": "docs/user-service.md",
+            "source_line": 13,
+            "reference_type": "function",
+            "referenced_element": "getUserById",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "71": {
+            "source_file": "docs/user-service.md",
+            "source_line": 15,
+            "reference_type": "class",
+            "referenced_element": "UserById",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "72": {
+            "source_file": "docs/user-service.md",
+            "source_line": 15,
+            "reference_type": "function",
+            "referenced_element": "getUserById",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "73": {
+            "source_file": "docs/user-service.md",
+            "source_line": 23,
+            "reference_type": "function",
+            "referenced_element": "createUser",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "74": {
+            "source_file": "docs/user-service.md",
+            "source_line": 34,
+            "reference_type": "function",
+            "referenced_element": "deleteUser",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "75": {
+            "source_file": "docs/user-service.md",
+            "source_line": 44,
+            "reference_type": "class",
+            "referenced_element": "AllUsers",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "76": {
+            "source_file": "docs/user-service.md",
+            "source_line": 44,
+            "reference_type": "function",
+            "referenced_element": "getAllUsers",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "79": {
+            "source_file": "docs/user-service.md",
+            "source_line": 57,
+            "reference_type": "function",
+            "referenced_element": "createUser",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "80": {
+            "source_file": "docs/user-service.md",
+            "source_line": 60,
+            "reference_type": "class",
+            "referenced_element": "UserById",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "82": {
+            "source_file": "docs/user-service.md",
+            "source_line": 60,
+            "reference_type": "function",
+            "referenced_element": "getUserById",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "83": {
+            "source_file": "docs/user-service.md",
+            "source_line": 63,
+            "reference_type": "class",
+            "referenced_element": "AllUsers",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "85": {
+            "source_file": "docs/user-service.md",
+            "source_line": 63,
+            "reference_type": "function",
+            "referenced_element": "getAllUsers",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "87": {
+            "source_file": "docs/user-service.md",
+            "source_line": 66,
+            "reference_type": "function",
+            "referenced_element": "deleteUser",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "88": {
+            "source_file": "docs/user-service.md",
+            "source_line": 73,
+            "reference_type": "class",
+            "referenced_element": "UsersByName",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "89": {
+            "source_file": "docs/user-service.md",
+            "source_line": 73,
+            "reference_type": "function",
+            "referenced_element": "updateUser",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "90": {
+            "source_file": "docs/user-service.md",
+            "source_line": 73,
+            "reference_type": "function",
+            "referenced_element": "getUsersByName",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "92": {
+            "source_file": "docs/README.md",
+            "source_line": 3,
+            "reference_type": "class",
+            "referenced_element": "PHPStan",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "106": {
+            "source_file": "docs/README.md",
+            "source_line": 43,
+            "reference_type": "function",
+            "referenced_element": "getName",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "107": {
+            "source_file": "docs/README.md",
+            "source_line": 44,
+            "reference_type": "function",
+            "referenced_element": "getType",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "108": {
+            "source_file": "docs/README.md",
+            "source_line": 45,
+            "reference_type": "function",
+            "referenced_element": "isDocumented",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "110": {
+            "source_file": "docs/README.md",
+            "source_line": 49,
+            "reference_type": "class",
+            "referenced_element": "CoveragePercentage",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "111": {
+            "source_file": "docs/README.md",
+            "source_line": 49,
+            "reference_type": "function",
+            "referenced_element": "getCoveragePercentage",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "112": {
+            "source_file": "docs/README.md",
+            "source_line": 50,
+            "reference_type": "class",
+            "referenced_element": "UndocumentedCodeElements",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        "113": {
+            "source_file": "docs/README.md",
+            "source_line": 50,
+            "reference_type": "function",
+            "referenced_element": "getUndocumentedCodeElements",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        }
+    },
+    "all_elements": [
+        {
+            "name": "Configuration",
+            "type": "class",
+            "file": "src/Config/Configuration.php",
+            "line": 7,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": null,
+            "modifiers": [
+                "final"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration"
+        },
+        {
+            "name": "projectRoot",
+            "type": "property",
+            "file": "src/Config/Configuration.php",
+            "line": 9,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::projectRoot"
+        },
+        {
+            "name": "sourcePaths",
+            "type": "property",
+            "file": "src/Config/Configuration.php",
+            "line": 10,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::sourcePaths"
+        },
+        {
+            "name": "docsPaths",
+            "type": "property",
+            "file": "src/Config/Configuration.php",
+            "line": 11,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::docsPaths"
+        },
+        {
+            "name": "excludePaths",
+            "type": "property",
+            "file": "src/Config/Configuration.php",
+            "line": 12,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::excludePaths"
+        },
+        {
+            "name": "outputFormat",
+            "type": "property",
+            "file": "src/Config/Configuration.php",
+            "line": 13,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::outputFormat"
+        },
+        {
+            "name": "outputFile",
+            "type": "property",
+            "file": "src/Config/Configuration.php",
+            "line": 14,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::outputFile"
+        },
+        {
+            "name": "minimumCoverage",
+            "type": "property",
+            "file": "src/Config/Configuration.php",
+            "line": 15,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::minimumCoverage"
+        },
+        {
+            "name": "__construct",
+            "type": "method",
+            "file": "src/Config/Configuration.php",
+            "line": 17,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::__construct"
+        },
+        {
+            "name": "fromArray",
+            "type": "method",
+            "file": "src/Config/Configuration.php",
+            "line": 35,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "public",
+                "static"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::fromArray"
+        },
+        {
+            "name": "getProjectRoot",
+            "type": "method",
+            "file": "src/Config/Configuration.php",
+            "line": 48,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::getProjectRoot"
+        },
+        {
+            "name": "getSourcePaths",
+            "type": "method",
+            "file": "src/Config/Configuration.php",
+            "line": 53,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::getSourcePaths"
+        },
+        {
+            "name": "getDocsPaths",
+            "type": "method",
+            "file": "src/Config/Configuration.php",
+            "line": 58,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::getDocsPaths"
+        },
+        {
+            "name": "getExcludePaths",
+            "type": "method",
+            "file": "src/Config/Configuration.php",
+            "line": 63,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::getExcludePaths"
+        },
+        {
+            "name": "getOutputFormat",
+            "type": "method",
+            "file": "src/Config/Configuration.php",
+            "line": 68,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::getOutputFormat"
+        },
+        {
+            "name": "getOutputFile",
+            "type": "method",
+            "file": "src/Config/Configuration.php",
+            "line": 73,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::getOutputFile"
+        },
+        {
+            "name": "getMinimumCoverage",
+            "type": "method",
+            "file": "src/Config/Configuration.php",
+            "line": 78,
+            "namespace": "Anchor\\DocsCoverage\\Config",
+            "parent_class": "Configuration",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Config\\Configuration::getMinimumCoverage"
+        },
+        {
+            "name": "UserService",
+            "type": "class",
+            "file": "src/Example/UserService.php",
+            "line": 10,
+            "namespace": "Anchor\\DocsCoverage\\Example",
+            "parent_class": null,
+            "modifiers": [
+                "final"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Example\\UserService"
+        },
+        {
+            "name": "users",
+            "type": "property",
+            "file": "src/Example/UserService.php",
+            "line": 12,
+            "namespace": "Anchor\\DocsCoverage\\Example",
+            "parent_class": "UserService",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Example\\UserService::users"
+        },
+        {
+            "name": "getUserById",
+            "type": "method",
+            "file": "src/Example/UserService.php",
+            "line": 17,
+            "namespace": "Anchor\\DocsCoverage\\Example",
+            "parent_class": "UserService",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Example\\UserService::getUserById"
+        },
+        {
+            "name": "createUser",
+            "type": "method",
+            "file": "src/Example/UserService.php",
+            "line": 25,
+            "namespace": "Anchor\\DocsCoverage\\Example",
+            "parent_class": "UserService",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Example\\UserService::createUser"
+        },
+        {
+            "name": "deleteUser",
+            "type": "method",
+            "file": "src/Example/UserService.php",
+            "line": 41,
+            "namespace": "Anchor\\DocsCoverage\\Example",
+            "parent_class": "UserService",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Example\\UserService::deleteUser"
+        },
+        {
+            "name": "updateUser",
+            "type": "method",
+            "file": "src/Example/UserService.php",
+            "line": 51,
+            "namespace": "Anchor\\DocsCoverage\\Example",
+            "parent_class": "UserService",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Example\\UserService::updateUser"
+        },
+        {
+            "name": "validateEmail",
+            "type": "method",
+            "file": "src/Example/UserService.php",
+            "line": 62,
+            "namespace": "Anchor\\DocsCoverage\\Example",
+            "parent_class": "UserService",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Example\\UserService::validateEmail"
+        },
+        {
+            "name": "getAllUsers",
+            "type": "method",
+            "file": "src/Example/UserService.php",
+            "line": 70,
+            "namespace": "Anchor\\DocsCoverage\\Example",
+            "parent_class": "UserService",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Example\\UserService::getAllUsers"
+        },
+        {
+            "name": "getUsersByName",
+            "type": "method",
+            "file": "src/Example/UserService.php",
+            "line": 76,
+            "namespace": "Anchor\\DocsCoverage\\Example",
+            "parent_class": "UserService",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Example\\UserService::getUsersByName"
+        },
+        {
+            "name": "CoverageReport",
+            "type": "class",
+            "file": "src/Model/CoverageReport.php",
+            "line": 7,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": null,
+            "modifiers": [
+                "final"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport"
+        },
+        {
+            "name": "codeElements",
+            "type": "property",
+            "file": "src/Model/CoverageReport.php",
+            "line": 10,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::codeElements"
+        },
+        {
+            "name": "documentationReferences",
+            "type": "property",
+            "file": "src/Model/CoverageReport.php",
+            "line": 13,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::documentationReferences"
+        },
+        {
+            "name": "coveragePercentage",
+            "type": "property",
+            "file": "src/Model/CoverageReport.php",
+            "line": 15,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::coveragePercentage"
+        },
+        {
+            "name": "totalElements",
+            "type": "property",
+            "file": "src/Model/CoverageReport.php",
+            "line": 16,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::totalElements"
+        },
+        {
+            "name": "documentedElements",
+            "type": "property",
+            "file": "src/Model/CoverageReport.php",
+            "line": 17,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::documentedElements"
+        },
+        {
+            "name": "undocumentedElements",
+            "type": "property",
+            "file": "src/Model/CoverageReport.php",
+            "line": 18,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::undocumentedElements"
+        },
+        {
+            "name": "undocumentedCodeElements",
+            "type": "property",
+            "file": "src/Model/CoverageReport.php",
+            "line": 21,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::undocumentedCodeElements"
+        },
+        {
+            "name": "brokenReferences",
+            "type": "property",
+            "file": "src/Model/CoverageReport.php",
+            "line": 24,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::brokenReferences"
+        },
+        {
+            "name": "__construct",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 30,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::__construct"
+        },
+        {
+            "name": "calculateCoverage",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 37,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::calculateCoverage"
+        },
+        {
+            "name": "getCodeElements",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 56,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::getCodeElements"
+        },
+        {
+            "name": "getDocumentationReferences",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 62,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::getDocumentationReferences"
+        },
+        {
+            "name": "getCoveragePercentage",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 67,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::getCoveragePercentage"
+        },
+        {
+            "name": "getTotalElements",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 72,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::getTotalElements"
+        },
+        {
+            "name": "getDocumentedElements",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 77,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::getDocumentedElements"
+        },
+        {
+            "name": "getUndocumentedElements",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 82,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::getUndocumentedElements"
+        },
+        {
+            "name": "getUndocumentedCodeElements",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 88,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::getUndocumentedCodeElements"
+        },
+        {
+            "name": "getBrokenReferences",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 94,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::getBrokenReferences"
+        },
+        {
+            "name": "hasBrokenReferences",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 99,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::hasBrokenReferences"
+        },
+        {
+            "name": "isSuccessful",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 104,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::isSuccessful"
+        },
+        {
+            "name": "getCoverageByType",
+            "type": "method",
+            "file": "src/Model/CoverageReport.php",
+            "line": 109,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CoverageReport",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CoverageReport::getCoverageByType"
+        },
+        {
+            "name": "CodeElement",
+            "type": "class",
+            "file": "src/Model/CodeElement.php",
+            "line": 7,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": null,
+            "modifiers": [
+                "final"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement"
+        },
+        {
+            "name": "name",
+            "type": "property",
+            "file": "src/Model/CodeElement.php",
+            "line": 17,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::name"
+        },
+        {
+            "name": "type",
+            "type": "property",
+            "file": "src/Model/CodeElement.php",
+            "line": 18,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::type"
+        },
+        {
+            "name": "file",
+            "type": "property",
+            "file": "src/Model/CodeElement.php",
+            "line": 19,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::file"
+        },
+        {
+            "name": "line",
+            "type": "property",
+            "file": "src/Model/CodeElement.php",
+            "line": 20,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::line"
+        },
+        {
+            "name": "namespace",
+            "type": "property",
+            "file": "src/Model/CodeElement.php",
+            "line": 21,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::namespace"
+        },
+        {
+            "name": "parentClass",
+            "type": "property",
+            "file": "src/Model/CodeElement.php",
+            "line": 22,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::parentClass"
+        },
+        {
+            "name": "modifiers",
+            "type": "property",
+            "file": "src/Model/CodeElement.php",
+            "line": 23,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::modifiers"
+        },
+        {
+            "name": "isDocumented",
+            "type": "property",
+            "file": "src/Model/CodeElement.php",
+            "line": 24,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::isDocumented"
+        },
+        {
+            "name": "__construct",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 26,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::__construct"
+        },
+        {
+            "name": "getName",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 46,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::getName"
+        },
+        {
+            "name": "getType",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 51,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::getType"
+        },
+        {
+            "name": "getFile",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 56,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::getFile"
+        },
+        {
+            "name": "getLine",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 61,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::getLine"
+        },
+        {
+            "name": "getNamespace",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 66,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::getNamespace"
+        },
+        {
+            "name": "getParentClass",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 71,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::getParentClass"
+        },
+        {
+            "name": "getModifiers",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 76,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::getModifiers"
+        },
+        {
+            "name": "isDocumented",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 81,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::isDocumented"
+        },
+        {
+            "name": "setDocumented",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 86,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::setDocumented"
+        },
+        {
+            "name": "getFullyQualifiedName",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 91,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::getFullyQualifiedName"
+        },
+        {
+            "name": "isPublic",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 104,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::isPublic"
+        },
+        {
+            "name": "isPrivate",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 109,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::isPrivate"
+        },
+        {
+            "name": "isProtected",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 114,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::isProtected"
+        },
+        {
+            "name": "shouldBeDocumented",
+            "type": "method",
+            "file": "src/Model/CodeElement.php",
+            "line": 119,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "CodeElement",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\CodeElement::shouldBeDocumented"
+        },
+        {
+            "name": "DocumentationReference",
+            "type": "class",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 7,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": null,
+            "modifiers": [
+                "final"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference"
+        },
+        {
+            "name": "sourceFile",
+            "type": "property",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 9,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::sourceFile"
+        },
+        {
+            "name": "sourceLine",
+            "type": "property",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 10,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::sourceLine"
+        },
+        {
+            "name": "referenceType",
+            "type": "property",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 11,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::referenceType"
+        },
+        {
+            "name": "referencedElement",
+            "type": "property",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 12,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::referencedElement"
+        },
+        {
+            "name": "referencedFile",
+            "type": "property",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 13,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::referencedFile"
+        },
+        {
+            "name": "referencedLine",
+            "type": "property",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 14,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::referencedLine"
+        },
+        {
+            "name": "isValid",
+            "type": "property",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 15,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::isValid"
+        },
+        {
+            "name": "__construct",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 17,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::__construct"
+        },
+        {
+            "name": "getSourceFile",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 35,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::getSourceFile"
+        },
+        {
+            "name": "getSourceLine",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 40,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::getSourceLine"
+        },
+        {
+            "name": "getReferenceType",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 45,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::getReferenceType"
+        },
+        {
+            "name": "getReferencedElement",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 50,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::getReferencedElement"
+        },
+        {
+            "name": "getReferencedFile",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 55,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::getReferencedFile"
+        },
+        {
+            "name": "getReferencedLine",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 60,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::getReferencedLine"
+        },
+        {
+            "name": "isValid",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 65,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::isValid"
+        },
+        {
+            "name": "setValid",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 70,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::setValid"
+        },
+        {
+            "name": "setReferencedLocation",
+            "type": "method",
+            "file": "src/Model/DocumentationReference.php",
+            "line": 75,
+            "namespace": "Anchor\\DocsCoverage\\Model",
+            "parent_class": "DocumentationReference",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Model\\DocumentationReference::setReferencedLocation"
+        },
+        {
+            "name": "ReportGenerator",
+            "type": "class",
+            "file": "src/Report/ReportGenerator.php",
+            "line": 11,
+            "namespace": "Anchor\\DocsCoverage\\Report",
+            "parent_class": null,
+            "modifiers": [
+                "final"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Report\\ReportGenerator"
+        },
+        {
+            "name": "generateConsoleReport",
+            "type": "method",
+            "file": "src/Report/ReportGenerator.php",
+            "line": 13,
+            "namespace": "Anchor\\DocsCoverage\\Report",
+            "parent_class": "ReportGenerator",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Report\\ReportGenerator::generateConsoleReport"
+        },
+        {
+            "name": "generateJsonReport",
+            "type": "method",
+            "file": "src/Report/ReportGenerator.php",
+            "line": 103,
+            "namespace": "Anchor\\DocsCoverage\\Report",
+            "parent_class": "ReportGenerator",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Report\\ReportGenerator::generateJsonReport"
+        },
+        {
+            "name": "generateHtmlReport",
+            "type": "method",
+            "file": "src/Report/ReportGenerator.php",
+            "line": 123,
+            "namespace": "Anchor\\DocsCoverage\\Report",
+            "parent_class": "ReportGenerator",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Report\\ReportGenerator::generateHtmlReport"
+        },
+        {
+            "name": "elementToArray",
+            "type": "method",
+            "file": "src/Report/ReportGenerator.php",
+            "line": 205,
+            "namespace": "Anchor\\DocsCoverage\\Report",
+            "parent_class": "ReportGenerator",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Report\\ReportGenerator::elementToArray"
+        },
+        {
+            "name": "referenceToArray",
+            "type": "method",
+            "file": "src/Report/ReportGenerator.php",
+            "line": 220,
+            "namespace": "Anchor\\DocsCoverage\\Report",
+            "parent_class": "ReportGenerator",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Report\\ReportGenerator::referenceToArray"
+        },
+        {
+            "name": "groupElementsByFile",
+            "type": "method",
+            "file": "src/Report/ReportGenerator.php",
+            "line": 233,
+            "namespace": "Anchor\\DocsCoverage\\Report",
+            "parent_class": "ReportGenerator",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Report\\ReportGenerator::groupElementsByFile"
+        },
+        {
+            "name": "getRelativePath",
+            "type": "method",
+            "file": "src/Report/ReportGenerator.php",
+            "line": 242,
+            "namespace": "Anchor\\DocsCoverage\\Report",
+            "parent_class": "ReportGenerator",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Report\\ReportGenerator::getRelativePath"
+        },
+        {
+            "name": "getHtmlStyles",
+            "type": "method",
+            "file": "src/Report/ReportGenerator.php",
+            "line": 251,
+            "namespace": "Anchor\\DocsCoverage\\Report",
+            "parent_class": "ReportGenerator",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Report\\ReportGenerator::getHtmlStyles"
+        },
+        {
+            "name": "CoverageAnalysisService",
+            "type": "class",
+            "file": "src/Service/CoverageAnalysisService.php",
+            "line": 14,
+            "namespace": "Anchor\\DocsCoverage\\Service",
+            "parent_class": null,
+            "modifiers": [
+                "final"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Service\\CoverageAnalysisService"
+        },
+        {
+            "name": "codeAnalyzer",
+            "type": "property",
+            "file": "src/Service/CoverageAnalysisService.php",
+            "line": 16,
+            "namespace": "Anchor\\DocsCoverage\\Service",
+            "parent_class": "CoverageAnalysisService",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Service\\CoverageAnalysisService::codeAnalyzer"
+        },
+        {
+            "name": "documentationAnalyzer",
+            "type": "property",
+            "file": "src/Service/CoverageAnalysisService.php",
+            "line": 17,
+            "namespace": "Anchor\\DocsCoverage\\Service",
+            "parent_class": "CoverageAnalysisService",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Service\\CoverageAnalysisService::documentationAnalyzer"
+        },
+        {
+            "name": "__construct",
+            "type": "method",
+            "file": "src/Service/CoverageAnalysisService.php",
+            "line": 19,
+            "namespace": "Anchor\\DocsCoverage\\Service",
+            "parent_class": "CoverageAnalysisService",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Service\\CoverageAnalysisService::__construct"
+        },
+        {
+            "name": "analyze",
+            "type": "method",
+            "file": "src/Service/CoverageAnalysisService.php",
+            "line": 27,
+            "namespace": "Anchor\\DocsCoverage\\Service",
+            "parent_class": "CoverageAnalysisService",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Service\\CoverageAnalysisService::analyze"
+        },
+        {
+            "name": "matchDocumentationToCode",
+            "type": "method",
+            "file": "src/Service/CoverageAnalysisService.php",
+            "line": 52,
+            "namespace": "Anchor\\DocsCoverage\\Service",
+            "parent_class": "CoverageAnalysisService",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Service\\CoverageAnalysisService::matchDocumentationToCode"
+        },
+        {
+            "name": "buildCodeIndex",
+            "type": "method",
+            "file": "src/Service/CoverageAnalysisService.php",
+            "line": 97,
+            "namespace": "Anchor\\DocsCoverage\\Service",
+            "parent_class": "CoverageAnalysisService",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Service\\CoverageAnalysisService::buildCodeIndex"
+        },
+        {
+            "name": "markFileElementsAsDocumented",
+            "type": "method",
+            "file": "src/Service/CoverageAnalysisService.php",
+            "line": 126,
+            "namespace": "Anchor\\DocsCoverage\\Service",
+            "parent_class": "CoverageAnalysisService",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Service\\CoverageAnalysisService::markFileElementsAsDocumented"
+        },
+        {
+            "name": "resolveFilePath",
+            "type": "method",
+            "file": "src/Service/CoverageAnalysisService.php",
+            "line": 148,
+            "namespace": "Anchor\\DocsCoverage\\Service",
+            "parent_class": "CoverageAnalysisService",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Service\\CoverageAnalysisService::resolveFilePath"
+        },
+        {
+            "name": "DocumentationAnalyzer",
+            "type": "class",
+            "file": "src/Analyzer/DocumentationAnalyzer.php",
+            "line": 16,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": null,
+            "modifiers": [
+                "final"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\DocumentationAnalyzer"
+        },
+        {
+            "name": "parser",
+            "type": "property",
+            "file": "src/Analyzer/DocumentationAnalyzer.php",
+            "line": 18,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "DocumentationAnalyzer",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\DocumentationAnalyzer::parser"
+        },
+        {
+            "name": "__construct",
+            "type": "method",
+            "file": "src/Analyzer/DocumentationAnalyzer.php",
+            "line": 20,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "DocumentationAnalyzer",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\DocumentationAnalyzer::__construct"
+        },
+        {
+            "name": "analyze",
+            "type": "method",
+            "file": "src/Analyzer/DocumentationAnalyzer.php",
+            "line": 31,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "DocumentationAnalyzer",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\DocumentationAnalyzer::analyze"
+        },
+        {
+            "name": "analyzeFile",
+            "type": "method",
+            "file": "src/Analyzer/DocumentationAnalyzer.php",
+            "line": 58,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "DocumentationAnalyzer",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\DocumentationAnalyzer::analyzeFile"
+        },
+        {
+            "name": "findCodeReferences",
+            "type": "method",
+            "file": "src/Analyzer/DocumentationAnalyzer.php",
+            "line": 79,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "DocumentationAnalyzer",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\DocumentationAnalyzer::findCodeReferences"
+        },
+        {
+            "name": "findMarkdownLinks",
+            "type": "method",
+            "file": "src/Analyzer/DocumentationAnalyzer.php",
+            "line": 141,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "DocumentationAnalyzer",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\DocumentationAnalyzer::findMarkdownLinks"
+        },
+        {
+            "name": "isCodeReference",
+            "type": "method",
+            "file": "src/Analyzer/DocumentationAnalyzer.php",
+            "line": 168,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "DocumentationAnalyzer",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\DocumentationAnalyzer::isCodeReference"
+        },
+        {
+            "name": "parseCodeReference",
+            "type": "method",
+            "file": "src/Analyzer/DocumentationAnalyzer.php",
+            "line": 191,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "DocumentationAnalyzer",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\DocumentationAnalyzer::parseCodeReference"
+        },
+        {
+            "name": "CodeAnalyzer",
+            "type": "class",
+            "file": "src/Analyzer/CodeAnalyzer.php",
+            "line": 15,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": null,
+            "modifiers": [
+                "final"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\CodeAnalyzer"
+        },
+        {
+            "name": "parser",
+            "type": "property",
+            "file": "src/Analyzer/CodeAnalyzer.php",
+            "line": 17,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "CodeAnalyzer",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\CodeAnalyzer::parser"
+        },
+        {
+            "name": "__construct",
+            "type": "method",
+            "file": "src/Analyzer/CodeAnalyzer.php",
+            "line": 19,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "CodeAnalyzer",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\CodeAnalyzer::__construct"
+        },
+        {
+            "name": "analyze",
+            "type": "method",
+            "file": "src/Analyzer/CodeAnalyzer.php",
+            "line": 29,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "CodeAnalyzer",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\CodeAnalyzer::analyze"
+        },
+        {
+            "name": "analyzeFile",
+            "type": "method",
+            "file": "src/Analyzer/CodeAnalyzer.php",
+            "line": 61,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "CodeAnalyzer",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\CodeAnalyzer::analyzeFile"
+        },
+        {
+            "name": "CodeElementVisitor",
+            "type": "class",
+            "file": "src/Analyzer/CodeAnalyzer.php",
+            "line": 87,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": null,
+            "modifiers": [
+                "final"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\CodeElementVisitor"
+        },
+        {
+            "name": "filePath",
+            "type": "property",
+            "file": "src/Analyzer/CodeAnalyzer.php",
+            "line": 89,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "CodeElementVisitor",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\CodeElementVisitor::filePath"
+        },
+        {
+            "name": "elements",
+            "type": "property",
+            "file": "src/Analyzer/CodeAnalyzer.php",
+            "line": 90,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "CodeElementVisitor",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\CodeElementVisitor::elements"
+        },
+        {
+            "name": "currentNamespace",
+            "type": "property",
+            "file": "src/Analyzer/CodeAnalyzer.php",
+            "line": 91,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "CodeElementVisitor",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\CodeElementVisitor::currentNamespace"
+        },
+        {
+            "name": "currentClass",
+            "type": "property",
+            "file": "src/Analyzer/CodeAnalyzer.php",
+            "line": 92,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "CodeElementVisitor",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\CodeElementVisitor::currentClass"
+        },
+        {
+            "name": "__construct",
+            "type": "method",
+            "file": "src/Analyzer/CodeAnalyzer.php",
+            "line": 94,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "CodeElementVisitor",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\CodeElementVisitor::__construct"
+        },
+        {
+            "name": "enterNode",
+            "type": "method",
+            "file": "src/Analyzer/CodeAnalyzer.php",
+            "line": 99,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "CodeElementVisitor",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\CodeElementVisitor::enterNode"
+        },
+        {
+            "name": "leaveNode",
+            "type": "method",
+            "file": "src/Analyzer/CodeAnalyzer.php",
+            "line": 165,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "CodeElementVisitor",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\CodeElementVisitor::leaveNode"
+        },
+        {
+            "name": "getElements",
+            "type": "method",
+            "file": "src/Analyzer/CodeAnalyzer.php",
+            "line": 177,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "CodeElementVisitor",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\CodeElementVisitor::getElements"
+        },
+        {
+            "name": "getModifiers",
+            "type": "method",
+            "file": "src/Analyzer/CodeAnalyzer.php",
+            "line": 182,
+            "namespace": "Anchor\\DocsCoverage\\Analyzer",
+            "parent_class": "CodeElementVisitor",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": true,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Analyzer\\CodeElementVisitor::getModifiers"
+        },
+        {
+            "name": "Application",
+            "type": "class",
+            "file": "src/Console/Application.php",
+            "line": 10,
+            "namespace": "Anchor\\DocsCoverage\\Console",
+            "parent_class": null,
+            "modifiers": [
+                "final"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Console\\Application"
+        },
+        {
+            "name": "__construct",
+            "type": "method",
+            "file": "src/Console/Application.php",
+            "line": 12,
+            "namespace": "Anchor\\DocsCoverage\\Console",
+            "parent_class": "Application",
+            "modifiers": [
+                "public"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Console\\Application::__construct"
+        },
+        {
+            "name": "AnalyzeCommand",
+            "type": "class",
+            "file": "src/Console/Command/AnalyzeCommand.php",
+            "line": 21,
+            "namespace": "Anchor\\DocsCoverage\\Console\\Command",
+            "parent_class": null,
+            "modifiers": [
+                "final"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Console\\Command\\AnalyzeCommand"
+        },
+        {
+            "name": "configure",
+            "type": "method",
+            "file": "src/Console/Command/AnalyzeCommand.php",
+            "line": 27,
+            "namespace": "Anchor\\DocsCoverage\\Console\\Command",
+            "parent_class": "AnalyzeCommand",
+            "modifiers": [
+                "protected"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Console\\Command\\AnalyzeCommand::configure"
+        },
+        {
+            "name": "execute",
+            "type": "method",
+            "file": "src/Console/Command/AnalyzeCommand.php",
+            "line": 56,
+            "namespace": "Anchor\\DocsCoverage\\Console\\Command",
+            "parent_class": "AnalyzeCommand",
+            "modifiers": [
+                "protected"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Console\\Command\\AnalyzeCommand::execute"
+        },
+        {
+            "name": "loadConfiguration",
+            "type": "method",
+            "file": "src/Console/Command/AnalyzeCommand.php",
+            "line": 149,
+            "namespace": "Anchor\\DocsCoverage\\Console\\Command",
+            "parent_class": "AnalyzeCommand",
+            "modifiers": [
+                "private"
+            ],
+            "is_documented": false,
+            "fully_qualified_name": "Anchor\\DocsCoverage\\Console\\Command\\AnalyzeCommand::loadConfiguration"
+        }
+    ],
+    "all_references": [
+        {
+            "source_file": "docs/project-summary.md",
+            "source_line": 5,
+            "reference_type": "class",
+            "referenced_element": "PHPStan",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/project-summary.md",
+            "source_line": 13,
+            "reference_type": "class",
+            "referenced_element": "CodeElement",
+            "referenced_file": "src/Model/CodeElement.php",
+            "referenced_line": 7,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/project-summary.md",
+            "source_line": 14,
+            "reference_type": "class",
+            "referenced_element": "DocumentationReference",
+            "referenced_file": "src/Model/DocumentationReference.php",
+            "referenced_line": 7,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/project-summary.md",
+            "source_line": 15,
+            "reference_type": "class",
+            "referenced_element": "CoverageReport",
+            "referenced_file": "src/Model/CoverageReport.php",
+            "referenced_line": 7,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/project-summary.md",
+            "source_line": 17,
+            "reference_type": "class",
+            "referenced_element": "CodeAnalyzer",
+            "referenced_file": "src/Analyzer/CodeAnalyzer.php",
+            "referenced_line": 15,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/project-summary.md",
+            "source_line": 18,
+            "reference_type": "class",
+            "referenced_element": "DocumentationAnalyzer",
+            "referenced_file": "src/Analyzer/DocumentationAnalyzer.php",
+            "referenced_line": 16,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/project-summary.md",
+            "source_line": 19,
+            "reference_type": "class",
+            "referenced_element": "CoverageAnalysisService",
+            "referenced_file": "src/Service/CoverageAnalysisService.php",
+            "referenced_line": 14,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/project-summary.md",
+            "source_line": 20,
+            "reference_type": "class",
+            "referenced_element": "ReportGenerator",
+            "referenced_file": "src/Report/ReportGenerator.php",
+            "referenced_line": 11,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/project-summary.md",
+            "source_line": 61,
+            "reference_type": "class",
+            "referenced_element": "YAML",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/project-summary.md",
+            "source_line": 117,
+            "reference_type": "class",
+            "referenced_element": "GitHub",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/project-summary.md",
+            "source_line": 118,
+            "reference_type": "class",
+            "referenced_element": "GitLab",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/project-summary.md",
+            "source_line": 127,
+            "reference_type": "class",
+            "referenced_element": "StructuredText",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/project-summary.md",
+            "source_line": 128,
+            "reference_type": "class",
+            "referenced_element": "AsciiDoc",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/project-summary.md",
+            "source_line": 129,
+            "reference_type": "class",
+            "referenced_element": "PHPDoc",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/project-summary.md",
+            "source_line": 137,
+            "reference_type": "class",
+            "referenced_element": "PHPStorm",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 66,
+            "reference_type": "class",
+            "referenced_element": "GitHub",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 99,
+            "reference_type": "class",
+            "referenced_element": "GitLab",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 130,
+            "reference_type": "function",
+            "referenced_element": "stage",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 136,
+            "reference_type": "function",
+            "referenced_element": "stage",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 143,
+            "reference_type": "function",
+            "referenced_element": "publishHTML",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 145,
+            "reference_type": "class",
+            "referenced_element": "LinkToLastBuild",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 166,
+            "reference_type": "class",
+            "referenced_element": "Anchor\\DocsCoverage\\Analyzer\\CodeAnalyzer",
+            "referenced_file": "src/Analyzer/CodeAnalyzer.php",
+            "referenced_line": 15,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 167,
+            "reference_type": "class",
+            "referenced_element": "Anchor\\DocsCoverage\\Analyzer\\DocumentationAnalyzer",
+            "referenced_file": "src/Analyzer/DocumentationAnalyzer.php",
+            "referenced_line": 16,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 168,
+            "reference_type": "class",
+            "referenced_element": "Anchor\\DocsCoverage\\Config\\Configuration",
+            "referenced_file": "src/Config/Configuration.php",
+            "referenced_line": 7,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 169,
+            "reference_type": "class",
+            "referenced_element": "Anchor\\DocsCoverage\\Service\\CoverageAnalysisService",
+            "referenced_file": "src/Service/CoverageAnalysisService.php",
+            "referenced_line": 14,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 170,
+            "reference_type": "class",
+            "referenced_element": "Anchor\\DocsCoverage\\Report\\ReportGenerator",
+            "referenced_file": "src/Report/ReportGenerator.php",
+            "referenced_line": 11,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 182,
+            "reference_type": "class",
+            "referenced_element": "CodeAnalyzer",
+            "referenced_file": "src/Analyzer/CodeAnalyzer.php",
+            "referenced_line": 15,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 183,
+            "reference_type": "class",
+            "referenced_element": "DocumentationAnalyzer",
+            "referenced_file": "src/Analyzer/DocumentationAnalyzer.php",
+            "referenced_line": 16,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 184,
+            "reference_type": "class",
+            "referenced_element": "CoverageAnalysisService",
+            "referenced_file": "src/Service/CoverageAnalysisService.php",
+            "referenced_line": 14,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 187,
+            "reference_type": "method",
+            "referenced_element": "analyze",
+            "referenced_file": "src/Analyzer/CodeAnalyzer.php",
+            "referenced_line": 29,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 187,
+            "reference_type": "function",
+            "referenced_element": "analyze",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 190,
+            "reference_type": "class",
+            "referenced_element": "ReportGenerator",
+            "referenced_file": "src/Report/ReportGenerator.php",
+            "referenced_line": 11,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 191,
+            "reference_type": "class",
+            "referenced_element": "ConsoleReport",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 191,
+            "reference_type": "class",
+            "referenced_element": "MinimumCoverage",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 191,
+            "reference_type": "method",
+            "referenced_element": "generateConsoleReport",
+            "referenced_file": "src/Report/ReportGenerator.php",
+            "referenced_line": 13,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 191,
+            "reference_type": "method",
+            "referenced_element": "getMinimumCoverage",
+            "referenced_file": "src/Config/Configuration.php",
+            "referenced_line": 78,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 191,
+            "reference_type": "function",
+            "referenced_element": "generateConsoleReport",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 191,
+            "reference_type": "function",
+            "referenced_element": "getMinimumCoverage",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 196,
+            "reference_type": "class",
+            "referenced_element": "MinimumCoverage",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 196,
+            "reference_type": "method",
+            "referenced_element": "isSuccessful",
+            "referenced_file": "src/Model/CoverageReport.php",
+            "referenced_line": 104,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 196,
+            "reference_type": "method",
+            "referenced_element": "getMinimumCoverage",
+            "referenced_file": "src/Config/Configuration.php",
+            "referenced_line": 78,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 196,
+            "reference_type": "function",
+            "referenced_element": "isSuccessful",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 196,
+            "reference_type": "function",
+            "referenced_element": "getMinimumCoverage",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 200,
+            "reference_type": "function",
+            "referenced_element": "exit",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 208,
+            "reference_type": "class",
+            "referenced_element": "UserService",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": 10,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 208,
+            "reference_type": "class",
+            "referenced_element": "UserService",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": 10,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 213,
+            "reference_type": "class",
+            "referenced_element": "UserService",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": 10,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 213,
+            "reference_type": "class",
+            "referenced_element": "UserService",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": 10,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 218,
+            "reference_type": "class",
+            "referenced_element": "UserService",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": 10,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 219,
+            "reference_type": "class",
+            "referenced_element": "Anchor\\DocsCoverage\\Example\\UserService",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": 10,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 224,
+            "reference_type": "class",
+            "referenced_element": "UserById",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 224,
+            "reference_type": "function",
+            "referenced_element": "getUserById",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 225,
+            "reference_type": "class",
+            "referenced_element": "UserService",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": 10,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 225,
+            "reference_type": "method",
+            "referenced_element": "createInstance",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 225,
+            "reference_type": "function",
+            "referenced_element": "createInstance",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 242,
+            "reference_type": "function",
+            "referenced_element": "array_filter",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 242,
+            "reference_type": "function",
+            "referenced_element": "function",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 244,
+            "reference_type": "method",
+            "referenced_element": "getName",
+            "referenced_file": "src/Model/CodeElement.php",
+            "referenced_line": 46,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 244,
+            "reference_type": "function",
+            "referenced_element": "preg_match",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 244,
+            "reference_type": "function",
+            "referenced_element": "getName",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 249,
+            "reference_type": "method",
+            "referenced_element": "isPrivate",
+            "referenced_file": "src/Model/CodeElement.php",
+            "referenced_line": 109,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 249,
+            "reference_type": "function",
+            "referenced_element": "isPrivate",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 208,
+            "reference_type": "link",
+            "referenced_element": "../src/Example/UserService.php",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": null,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/examples.md",
+            "source_line": 213,
+            "reference_type": "link",
+            "referenced_element": "../src/Example/UserService.php#L25",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": 25,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 1,
+            "reference_type": "class",
+            "referenced_element": "UserService",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": 10,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 3,
+            "reference_type": "class",
+            "referenced_element": "UserService",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": 10,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 7,
+            "reference_type": "class",
+            "referenced_element": "Anchor\\DocsCoverage\\Example\\UserService",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": 10,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 9,
+            "reference_type": "class",
+            "referenced_element": "UserService",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": 10,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 9,
+            "reference_type": "class",
+            "referenced_element": "UserService",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": 10,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 13,
+            "reference_type": "class",
+            "referenced_element": "UserById",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 13,
+            "reference_type": "function",
+            "referenced_element": "getUserById",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 15,
+            "reference_type": "class",
+            "referenced_element": "UserById",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 15,
+            "reference_type": "function",
+            "referenced_element": "getUserById",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 23,
+            "reference_type": "function",
+            "referenced_element": "createUser",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 34,
+            "reference_type": "function",
+            "referenced_element": "deleteUser",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 44,
+            "reference_type": "class",
+            "referenced_element": "AllUsers",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 44,
+            "reference_type": "function",
+            "referenced_element": "getAllUsers",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 54,
+            "reference_type": "class",
+            "referenced_element": "UserService",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": 10,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 57,
+            "reference_type": "method",
+            "referenced_element": "createUser",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": 25,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 57,
+            "reference_type": "function",
+            "referenced_element": "createUser",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 60,
+            "reference_type": "class",
+            "referenced_element": "UserById",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 60,
+            "reference_type": "method",
+            "referenced_element": "getUserById",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": 17,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 60,
+            "reference_type": "function",
+            "referenced_element": "getUserById",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 63,
+            "reference_type": "class",
+            "referenced_element": "AllUsers",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 63,
+            "reference_type": "method",
+            "referenced_element": "getAllUsers",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": 70,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 63,
+            "reference_type": "function",
+            "referenced_element": "getAllUsers",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 66,
+            "reference_type": "method",
+            "referenced_element": "deleteUser",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": 41,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 66,
+            "reference_type": "function",
+            "referenced_element": "deleteUser",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 73,
+            "reference_type": "class",
+            "referenced_element": "UsersByName",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 73,
+            "reference_type": "function",
+            "referenced_element": "updateUser",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 73,
+            "reference_type": "function",
+            "referenced_element": "getUsersByName",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/user-service.md",
+            "source_line": 9,
+            "reference_type": "link",
+            "referenced_element": "../src/Example/UserService.php#L10",
+            "referenced_file": "src/Example/UserService.php",
+            "referenced_line": 10,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 3,
+            "reference_type": "class",
+            "referenced_element": "PHPStan",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 14,
+            "reference_type": "class",
+            "referenced_element": "CodeAnalyzer",
+            "referenced_file": "src/Analyzer/CodeAnalyzer.php",
+            "referenced_line": 15,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 15,
+            "reference_type": "class",
+            "referenced_element": "Anchor\\DocsCoverage\\Analyzer\\CodeAnalyzer",
+            "referenced_file": "src/Analyzer/CodeAnalyzer.php",
+            "referenced_line": 15,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 16,
+            "reference_type": "class",
+            "referenced_element": "CodeAnalyzer",
+            "referenced_file": "src/Analyzer/CodeAnalyzer.php",
+            "referenced_line": 15,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 16,
+            "reference_type": "class",
+            "referenced_element": "CodeAnalyzer",
+            "referenced_file": "src/Analyzer/CodeAnalyzer.php",
+            "referenced_line": 15,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 18,
+            "reference_type": "class",
+            "referenced_element": "DocumentationAnalyzer",
+            "referenced_file": "src/Analyzer/DocumentationAnalyzer.php",
+            "referenced_line": 16,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 19,
+            "reference_type": "class",
+            "referenced_element": "Anchor\\DocsCoverage\\Analyzer\\DocumentationAnalyzer",
+            "referenced_file": "src/Analyzer/DocumentationAnalyzer.php",
+            "referenced_line": 16,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 20,
+            "reference_type": "class",
+            "referenced_element": "DocumentationAnalyzer",
+            "referenced_file": "src/Analyzer/DocumentationAnalyzer.php",
+            "referenced_line": 16,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 20,
+            "reference_type": "class",
+            "referenced_element": "DocumentationAnalyzer",
+            "referenced_file": "src/Analyzer/DocumentationAnalyzer.php",
+            "referenced_line": 16,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 22,
+            "reference_type": "class",
+            "referenced_element": "CoverageAnalysisService",
+            "referenced_file": "src/Service/CoverageAnalysisService.php",
+            "referenced_line": 14,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 23,
+            "reference_type": "class",
+            "referenced_element": "Anchor\\DocsCoverage\\Service\\CoverageAnalysisService",
+            "referenced_file": "src/Service/CoverageAnalysisService.php",
+            "referenced_line": 14,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 24,
+            "reference_type": "class",
+            "referenced_element": "CoverageAnalysisService",
+            "referenced_file": "src/Service/CoverageAnalysisService.php",
+            "referenced_line": 14,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 24,
+            "reference_type": "class",
+            "referenced_element": "CoverageAnalysisService",
+            "referenced_file": "src/Service/CoverageAnalysisService.php",
+            "referenced_line": 14,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 41,
+            "reference_type": "class",
+            "referenced_element": "CodeElement",
+            "referenced_file": "src/Model/CodeElement.php",
+            "referenced_line": 7,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 43,
+            "reference_type": "function",
+            "referenced_element": "getName",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 44,
+            "reference_type": "function",
+            "referenced_element": "getType",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 45,
+            "reference_type": "function",
+            "referenced_element": "isDocumented",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 47,
+            "reference_type": "class",
+            "referenced_element": "CoverageReport",
+            "referenced_file": "src/Model/CoverageReport.php",
+            "referenced_line": 7,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 49,
+            "reference_type": "class",
+            "referenced_element": "CoveragePercentage",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 49,
+            "reference_type": "function",
+            "referenced_element": "getCoveragePercentage",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 50,
+            "reference_type": "class",
+            "referenced_element": "UndocumentedCodeElements",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 50,
+            "reference_type": "function",
+            "referenced_element": "getUndocumentedCodeElements",
+            "referenced_file": null,
+            "referenced_line": null,
+            "is_valid": false
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 16,
+            "reference_type": "link",
+            "referenced_element": "../src/Analyzer/CodeAnalyzer.php",
+            "referenced_file": "src/Analyzer/CodeAnalyzer.php",
+            "referenced_line": null,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 20,
+            "reference_type": "link",
+            "referenced_element": "../src/Analyzer/DocumentationAnalyzer.php",
+            "referenced_file": "src/Analyzer/DocumentationAnalyzer.php",
+            "referenced_line": null,
+            "is_valid": true
+        },
+        {
+            "source_file": "docs/README.md",
+            "source_line": 24,
+            "reference_type": "link",
+            "referenced_element": "../src/Service/CoverageAnalysisService.php",
+            "referenced_file": "src/Service/CoverageAnalysisService.php",
+            "referenced_line": null,
+            "is_valid": true
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+# Composer
+/vendor/
+composer.lock
+
+# IDE
+/.idea/
+/.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated reports
+coverage-report.html
+coverage-report.json
+
+# Logs
+*.log
+
+# Cache
+/cache/
+/tmp/
+
+# PHPUnit
+/phpunit.xml
+/.phpunit.result.cache 
