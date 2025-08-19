@@ -1,7 +1,29 @@
 #!/usr/bin/env php
 <?php
 
-require_once __DIR__ . '/../vendor/autoload.php';
+// Поиск корректного autoloader-а
+$possibleAutoloaders = [
+    // Для установки через Composer в другом проекте
+    __DIR__ . '/../../../../autoload.php',
+    __DIR__ . '/../../../autoload.php',
+    __DIR__ . '/../../autoload.php',
+    // Для локальной разработки
+    __DIR__ . '/../vendor/autoload.php',
+];
+
+$autoloaderFound = false;
+foreach ($possibleAutoloaders as $autoloader) {
+    if (file_exists($autoloader)) {
+        require_once $autoloader;
+        $autoloaderFound = true;
+        break;
+    }
+}
+
+if (!$autoloaderFound) {
+    fwrite(STDERR, "Unable to find Composer autoloader. Please run 'composer install' first.\n");
+    exit(1);
+}
 
 use Anchor\DocsCoverage\Console\Application;
 

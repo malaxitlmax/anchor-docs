@@ -114,7 +114,7 @@ your-project/
 ### Базовое использование
 
 ```bash
-# Через Composer (если установлен глобально)
+# Через Composer (рекомендуемый способ)
 vendor/bin/anchor-docs analyze
 
 # Через прямой путь (git clone/submodule)
@@ -123,7 +123,8 @@ php tools/anchor-docs/bin/anchor-docs analyze
 # С baseline для игнорирования legacy кода
 vendor/bin/anchor-docs analyze --baseline=docs-baseline.yml
 
-# Или создайте alias в composer.json
+# Проверка помощи
+vendor/bin/anchor-docs analyze --help
 ```
 
 ### Добавление в composer.json scripts
@@ -374,10 +375,22 @@ minimum_coverage: 70.0
 ```bash
 # Проверьте установку
 which anchor-docs
-composer show anchor/docs-coverage-analyzer
+composer show malaxitlmax/anchor-docs
 
 # Проверьте права доступа
 chmod +x vendor/bin/anchor-docs
+```
+
+### Проблема: "Failed to open stream: vendor/autoload.php"
+Эта ошибка возникает в старых версиях при неправильно настроенном autoloader. Убедитесь, что используете последнюю версию:
+
+```bash
+# Обновите до последней версии
+composer update malaxitlmax/anchor-docs
+
+# Или переустановите
+composer remove malaxitlmax/anchor-docs
+composer require malaxitlmax/anchor-docs --dev
 ```
 
 ### Проблема: "Недостаточно памяти"
