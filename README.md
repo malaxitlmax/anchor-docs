@@ -9,6 +9,7 @@ PHP инструмент для анализа покрытия кода док�
 - 📈 **Детальные отчеты**: Генерирует отчеты в консольном, JSON и HTML форматах
 - ⚙️ **Настраиваемость**: Гибкая конфигурация через YAML файлы и параметры командной строки
 - 🎯 **Интеграция в CI/CD**: Возвращает код ошибки при недостаточном покрытии
+- 📋 **Baseline поддержка**: Игнорирование известных проблем, как в PHPStan
 
 ## Установка
 
@@ -38,6 +39,12 @@ php bin/anchor-docs analyze --format=html --output=coverage-report.html
 
 # Анализ конкретных директорий
 php bin/anchor-docs analyze --source=app/ --docs=documentation/
+
+# Создание baseline для legacy кода
+php bin/anchor-docs analyze --generate-baseline --baseline=docs-baseline.yml
+
+# Анализ с использованием baseline
+php bin/anchor-docs analyze --baseline=docs-baseline.yml --min-coverage=80
 ```
 
 ## Конфигурация
@@ -53,6 +60,7 @@ exclude_paths:
   - "vendor/"
   - "tests/"
 minimum_coverage: 80.0
+baseline_file: "docs-baseline.yml"  # Игнорировать известные проблемы
 output_format: "console"
 ```
 
@@ -120,6 +128,23 @@ Issues: Coverage 66.7% is below minimum 80.0%
 - **DocumentationAnalyzer**: Анализирует Markdown с помощью league/commonmark
 - **CoverageAnalysisService**: Сопоставляет код и документацию
 - **ReportGenerator**: Создает отчеты в разных форматах
+
+## Baseline (Игнорирование известных проблем)
+
+Как и в PHPStan, вы можете создать baseline файл для игнорирования существующих проблем:
+
+```bash
+# Создать baseline из текущего состояния
+php bin/anchor-docs analyze --generate-baseline --baseline=docs-baseline.yml
+
+# Использовать baseline при анализе
+php bin/anchor-docs analyze --baseline=docs-baseline.yml
+
+# Обновить baseline (удалить недействительные записи)
+php bin/anchor-docs analyze --update-baseline --baseline=docs-baseline.yml
+```
+
+📖 **Подробное руководство**: [docs/baseline-guide.md](docs/baseline-guide.md)
 
 ## Разработка
 

@@ -1,0 +1,48 @@
+# Anchor Documentation Coverage Analyzer - Baseline File Example
+# This file contains a list of elements that are excluded from documentation coverage checks
+# Generated on: 2024-01-15T10:30:00+00:00
+# Total entries: 5
+
+version: '1.0'
+generated_at: '2024-01-15T10:30:00+00:00'
+total_entries: 5
+
+# Files overview:
+# - src/Example/UserService.php (3 entries)
+# - src/Example/PaymentProcessor.php (2 entries)
+
+entries:
+  - file: 'src/Example/UserService.php'
+    line: 45
+    element_type: 'method'
+    element_name: 'updateUser'
+    reason: 'Legacy code - documentation needed'
+    hash: 'a1b2c3d4e5f6789012345678901234567890abcd'
+
+  - file: 'src/Example/UserService.php'
+    line: 67
+    element_type: 'method'
+    element_name: 'deleteUser'
+    reason: 'Legacy code - documentation needed'
+    hash: 'b2c3d4e5f6a178901234567890123456789abcde'
+
+  - file: 'src/Example/UserService.php'
+    line: 89
+    element_type: 'method'
+    element_name: 'archiveUser'
+    reason: 'Deprecated method - will be removed in v2.0'
+    hash: 'c3d4e5f6a1b28901234567890123456789abcdef'
+
+  - file: 'src/Example/PaymentProcessor.php'
+    line: 23
+    element_type: 'class'
+    element_name: 'PaymentProcessor'
+    reason: 'Legacy code - documentation needed'
+    hash: 'd4e5f6a1b2c3890123456789012345678abcdef0'
+
+  - file: 'src/Example/PaymentProcessor.php'
+    line: 156
+    element_type: 'method'
+    element_name: 'processRefund'
+    reason: 'Complex legacy method - needs major refactoring before documentation'
+    hash: 'e5f6a1b2c3d4901234567890123456789abcdef01' 

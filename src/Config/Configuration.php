@@ -17,6 +17,7 @@ final class Configuration
     private string $outputFile;
     private float $minimumCoverage;
     private string $coverageScope;
+    private ?string $baselineFile;
 
     public function __construct(
         string $projectRoot,
@@ -26,7 +27,8 @@ final class Configuration
         string $outputFormat = 'console',
         string $outputFile = '',
         float $minimumCoverage = 80.0,
-        string $coverageScope = self::COVERAGE_SCOPE_ELEMENTS
+        string $coverageScope = self::COVERAGE_SCOPE_ELEMENTS,
+        ?string $baselineFile = null
     ) {
         $this->projectRoot = rtrim($projectRoot, '/');
         $this->sourcePaths = $sourcePaths;
@@ -36,6 +38,7 @@ final class Configuration
         $this->outputFile = $outputFile;
         $this->minimumCoverage = $minimumCoverage;
         $this->coverageScope = $this->validateCoverageScope($coverageScope);
+        $this->baselineFile = $baselineFile;
     }
 
     public static function fromArray(array $config): self
@@ -48,7 +51,8 @@ final class Configuration
             $config['output_format'] ?? 'console',
             $config['output_file'] ?? '',
             $config['minimum_coverage'] ?? 80.0,
-            $config['coverage_scope'] ?? self::COVERAGE_SCOPE_ELEMENTS
+            $config['coverage_scope'] ?? self::COVERAGE_SCOPE_ELEMENTS,
+            $config['baseline_file'] ?? null
         );
     }
 
@@ -95,6 +99,31 @@ final class Configuration
     public function isClassesOnlyScope(): bool
     {
         return $this->coverageScope === self::COVERAGE_SCOPE_CLASSES;
+    }
+
+    public function getBaselineFile(): ?string
+    {
+        return $this->baselineFile;
+    }
+
+    public function hasBaseline(): bool
+    {
+        return $this->baselineFile !== null && file_exists($this->getBaselineFilePath());
+    }
+
+    public function getBaselineFilePath(): ?string
+    {
+        if ($this->baselineFile === null) {
+            return null;
+        }
+
+        // Если путь абсолютный, используем его как есть
+        if (str_starts_with($this->baselineFile, '/')) {
+            return $this->baselineFile;
+        }
+
+        // Иначе делаем относительным к корню проекта
+        return $this->projectRoot . '/' . $this->baselineFile;
     }
 
     private function validateCoverageScope(string $scope): string

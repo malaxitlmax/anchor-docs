@@ -9,6 +9,7 @@ use Anchor\DocsCoverage\Analyzer\DocumentationAnalyzer;
 use Anchor\DocsCoverage\Config\Configuration;
 use Anchor\DocsCoverage\Report\ReportGenerator;
 use Anchor\DocsCoverage\Service\CoverageAnalysisService;
+use Anchor\DocsCoverage\Service\BaselineService;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -36,6 +37,9 @@ final class AnalyzeCommand extends Command
             ->addOption('output', 'o', InputOption::VALUE_REQUIRED, 'Output file (for json/html formats)')
             ->addOption('min-coverage', 'm', InputOption::VALUE_REQUIRED, 'Minimum coverage percentage')
             ->addOption('coverage-scope', null, InputOption::VALUE_REQUIRED, 'Coverage scope (classes, elements)')
+            ->addOption('baseline', 'b', InputOption::VALUE_REQUIRED, 'Baseline file path')
+            ->addOption('generate-baseline', null, InputOption::VALUE_NONE, 'Generate baseline file from current undocumented elements')
+            ->addOption('update-baseline', null, InputOption::VALUE_NONE, 'Update existing baseline file (remove invalid entries)')
             ->setHelp(
                 <<<'HELP'
 The <info>analyze</info> command analyzes your PHP code for documentation coverage.
@@ -53,6 +57,15 @@ Generate HTML report:
 
 Focus coverage on classes only:
 <info>php bin/anchor-docs analyze --coverage-scope=classes</info>
+
+Generate baseline from current state:
+<info>php bin/anchor-docs analyze --generate-baseline --baseline=docs-baseline.yml</info>
+
+Use existing baseline:
+<info>php bin/anchor-docs analyze --baseline=docs-baseline.yml</info>
+
+Update baseline file:
+<info>php bin/anchor-docs analyze --update-baseline --baseline=docs-baseline.yml</info>
 HELP
             );
     }
@@ -73,10 +86,20 @@ HELP
         // Создание сервисов
         $codeAnalyzer = new CodeAnalyzer();
         $documentationAnalyzer = new DocumentationAnalyzer();
-        $analysisService = new CoverageAnalysisService($codeAnalyzer, $documentationAnalyzer);
+        $baselineService = new BaselineService();
+        $analysisService = new CoverageAnalysisService($codeAnalyzer, $documentationAnalyzer, $baselineService);
         $reportGenerator = new ReportGenerator();
 
         try {
+            // Обработка baseline команд
+            if ($input->getOption('generate-baseline')) {
+                return $this->handleGenerateBaseline($input, $io, $config, $codeAnalyzer, $documentationAnalyzer, $baselineService);
+            }
+
+            if ($input->getOption('update-baseline')) {
+                return $this->handleUpdateBaseline($input, $io, $config, $codeAnalyzer, $baselineService);
+            }
+
             // Выполнение анализа
             $io->section('Analyzing source code...');
             $report = $analysisService->analyze($config);
@@ -184,9 +207,152 @@ HELP
         if ($input->hasParameterOption(['--coverage-scope'])) {
             $configData['coverage_scope'] = $input->getOption('coverage-scope');
         }
+        // Проверяем baseline опцию
+        if ($input->getOption('baseline')) {
+            $configData['baseline_file'] = $input->getOption('baseline');
+        }
 
         $configData['project_root'] = realpath($projectPath) ?: $projectPath;
 
         return Configuration::fromArray($configData);
+    }
+
+    private function handleGenerateBaseline(
+        InputInterface $input,
+        SymfonyStyle $io,
+        Configuration $config,
+        CodeAnalyzer $codeAnalyzer,
+        DocumentationAnalyzer $documentationAnalyzer,
+        BaselineService $baselineService
+    ): int {
+        $baselineFile = $input->getOption('baseline');
+        if (!$baselineFile) {
+            $io->error('Baseline file path is required when using --generate-baseline');
+            return Command::FAILURE;
+        }
+
+        $io->title('Generating Baseline File');
+        $io->note("Analyzing current state to generate baseline: $baselineFile");
+
+        // Анализируем код без baseline
+        $codeElements = $codeAnalyzer->analyze(
+            $config->getSourcePaths(),
+            $config->getExcludePaths()
+        );
+
+        $documentationReferences = $documentationAnalyzer->analyze(
+            $config->getDocsPaths()
+        );
+
+        // Временно создаем службу анализа без baseline для получения текущего состояния
+        $tempService = new CoverageAnalysisService($codeAnalyzer, $documentationAnalyzer);
+        $tempConfig = new Configuration(
+            $config->getProjectRoot(),
+            array_map(fn($path) => str_replace($config->getProjectRoot() . '/', '', $path), $config->getSourcePaths()),
+            array_map(fn($path) => str_replace($config->getProjectRoot() . '/', '', $path), $config->getDocsPaths()),
+            array_map(fn($path) => str_replace($config->getProjectRoot() . '/', '', $path), $config->getExcludePaths()),
+            $config->getOutputFormat(),
+            $config->getOutputFile(),
+            $config->getMinimumCoverage(),
+            $config->getCoverageScope()
+        );
+
+        // Сопоставляем документацию с кодом
+        $this->matchDocumentationToCodeForBaseline($codeElements, $documentationReferences, $tempConfig);
+
+        // Находим незадокументированные элементы
+        $undocumentedElements = array_filter($codeElements, fn($element) => !$element->isDocumented());
+
+        if (empty($undocumentedElements)) {
+            $io->success('All elements are documented! No baseline needed.');
+            return Command::SUCCESS;
+        }
+
+        // Генерируем baseline
+        $reason = 'Legacy code - documentation needed';
+        $baselineEntries = $baselineService->generateBaselineFromUndocumentedElements($undocumentedElements, $reason);
+
+        // Сохраняем baseline
+        $baselineService->saveBaseline($baselineFile, $baselineEntries);
+
+        $io->success([
+            "Baseline generated successfully: $baselineFile",
+            "Total entries: " . count($baselineEntries),
+            "Files covered: " . count(array_unique(array_map(fn($entry) => $entry->getFile(), $baselineEntries)))
+        ]);
+
+        return Command::SUCCESS;
+    }
+
+    private function handleUpdateBaseline(
+        InputInterface $input,
+        SymfonyStyle $io,
+        Configuration $config,
+        CodeAnalyzer $codeAnalyzer,
+        BaselineService $baselineService
+    ): int {
+        $baselineFile = $input->getOption('baseline');
+        if (!$baselineFile) {
+            $io->error('Baseline file path is required when using --update-baseline');
+            return Command::FAILURE;
+        }
+
+        if (!file_exists($baselineFile)) {
+            $io->error("Baseline file not found: $baselineFile");
+            return Command::FAILURE;
+        }
+
+        $io->title('Updating Baseline File');
+        $io->note("Validating and updating baseline: $baselineFile");
+
+        // Загружаем существующий baseline
+        $existingEntries = $baselineService->loadBaseline($baselineFile);
+        $originalCount = count($existingEntries);
+
+        // Анализируем текущий код
+        $codeElements = $codeAnalyzer->analyze(
+            $config->getSourcePaths(),
+            $config->getExcludePaths()
+        );
+
+        // Обновляем baseline (удаляем недействительные записи)
+        $updatedEntries = $baselineService->updateBaseline($existingEntries, $codeElements);
+        $updatedCount = count($updatedEntries);
+        $removedCount = $originalCount - $updatedCount;
+
+        // Сохраняем обновленный baseline
+        $baselineService->saveBaseline($baselineFile, $updatedEntries);
+
+        if ($removedCount > 0) {
+            $io->warning([
+                "Removed $removedCount invalid entries from baseline",
+                "Remaining entries: $updatedCount"
+            ]);
+        } else {
+            $io->success("Baseline is up to date. No changes needed.");
+        }
+
+        return Command::SUCCESS;
+    }
+
+    /**
+     * Временный метод для сопоставления документации с кодом при генерации baseline
+     */
+    private function matchDocumentationToCodeForBaseline(
+        array $codeElements,
+        array $documentationReferences,
+        Configuration $config
+    ): void {
+        // Создаем временный сервис для анализа
+        $tempService = new CoverageAnalysisService(
+            new CodeAnalyzer(),
+            new DocumentationAnalyzer()
+        );
+
+        // Используем reflection для доступа к приватному методу
+        $reflection = new \ReflectionClass($tempService);
+        $method = $reflection->getMethod('matchDocumentationToCode');
+        $method->setAccessible(true);
+        $method->invoke($tempService, $codeElements, $documentationReferences, $config);
     }
 } 

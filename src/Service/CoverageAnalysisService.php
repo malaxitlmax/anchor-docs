@@ -10,18 +10,22 @@ use Anchor\DocsCoverage\Config\Configuration;
 use Anchor\DocsCoverage\Model\CodeElement;
 use Anchor\DocsCoverage\Model\CoverageReport;
 use Anchor\DocsCoverage\Model\DocumentationReference;
+use Anchor\DocsCoverage\Service\BaselineService;
 
 final class CoverageAnalysisService
 {
     private CodeAnalyzer $codeAnalyzer;
     private DocumentationAnalyzer $documentationAnalyzer;
+    private BaselineService $baselineService;
 
     public function __construct(
         CodeAnalyzer $codeAnalyzer,
-        DocumentationAnalyzer $documentationAnalyzer
+        DocumentationAnalyzer $documentationAnalyzer,
+        ?BaselineService $baselineService = null
     ) {
         $this->codeAnalyzer = $codeAnalyzer;
         $this->documentationAnalyzer = $documentationAnalyzer;
+        $this->baselineService = $baselineService ?? new BaselineService();
     }
 
     public function analyze(Configuration $config): CoverageReport
@@ -40,7 +44,10 @@ final class CoverageAnalysisService
         // Сопоставление документации с кодом
         $this->matchDocumentationToCode($codeElements, $documentationReferences, $config);
 
-        return new CoverageReport($codeElements, $documentationReferences, $config);
+        // Применение baseline (фильтрация игнорируемых элементов)
+        $filteredCodeElements = $this->applyBaseline($codeElements, $config);
+
+        return new CoverageReport($filteredCodeElements, $documentationReferences, $config);
     }
 
     /**
@@ -165,5 +172,28 @@ final class CoverageAnalysisService
         }
 
         return null;
+    }
+
+    /**
+     * Применяет baseline для фильтрации игнорируемых элементов
+     * 
+     * @param CodeElement[] $codeElements
+     * @return CodeElement[]
+     */
+    private function applyBaseline(array $codeElements, Configuration $config): array
+    {
+        if (!$config->hasBaseline()) {
+            return $codeElements;
+        }
+
+        $baselineFile = $config->getBaselineFilePath();
+        $baselineEntries = $this->baselineService->loadBaseline($baselineFile);
+
+        if (empty($baselineEntries)) {
+            return $codeElements;
+        }
+
+        // Фильтруем элементы по baseline
+        return $this->baselineService->filterCodeElementsByBaseline($codeElements, $baselineEntries);
     }
 } 

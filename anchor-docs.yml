@@ -28,6 +28,9 @@ output_format: "console"
 # Файл для сохранения отчета (опционально)
 # output_file: "coverage-report.html"
 
+# Baseline файл для игнорирования известных проблем (как в PHPStan)
+# baseline_file: "docs-baseline.yml"
+
 # Дополнительные настройки
 settings:
   # Учитывать ли приватные методы
