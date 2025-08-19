@@ -1,8 +1,14 @@
 {
-    "name": "anchor/docs-coverage-analyzer",
+    "name": "malaxitlmax/anchor-docs",
     "description": "Documentation coverage analyzer for PHP projects",
     "type": "library",
     "license": "MIT",
+    "keywords": ["documentation", "coverage", "analysis", "php", "markdown", "baseline", "phpstan"],
+    "homepage": "https://github.com/malaxitlmax/anchor-docs",
+    "support": {
+        "issues": "https://github.com/malaxitlmax/anchor-docs/issues",
+        "source": "https://github.com/malaxitlmax/anchor-docs"
+    },
     "autoload": {
         "psr-4": {
             "Anchor\\DocsCoverage\\": "src/"

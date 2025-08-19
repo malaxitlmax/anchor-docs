@@ -12,12 +12,12 @@
 
 ```json
 {
-    "name": "anchor/docs-coverage-analyzer",
+    "name": "malaxitlmax/anchor-docs",
     "description": "Documentation coverage analyzer for PHP projects",
     "type": "library",
     "license": "MIT",
     "keywords": ["documentation", "coverage", "analysis", "php", "markdown"],
-    "homepage": "https://github.com/yourusername/anchor-docs",
+    "homepage": "https://github.com/malaxitlmax/anchor-docs",
     "authors": [
         {
             "name": "Your Name",
@@ -26,8 +26,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/yourusername/anchor-docs/issues",
-        "source": "https://github.com/yourusername/anchor-docs"
+        "issues": "https://github.com/malaxitlmax/anchor-docs/issues",
+        "source": "https://github.com/malaxitlmax/anchor-docs"
     },
     "autoload": {
         "psr-4": {
@@ -70,7 +70,7 @@ git push origin v1.0.0-beta
 
 ### 2. Добавление пакета
 
-1. Введите URL вашего репозитория: `https://github.com/yourusername/anchor-docs`
+1. Введите URL вашего репозитория: `https://github.com/malaxitlmax/anchor-docs`
 2. Нажмите "Check"
 3. Если всё корректно, нажмите "Submit"
 
@@ -142,7 +142,7 @@ jobs:
 После успешной публикации пакет будет доступен для установки:
 
 ```bash
-composer require anchor/docs-coverage-analyzer --dev
+composer require malaxitlmax/anchor-docs --dev
 ```
 
 ### Мониторинг

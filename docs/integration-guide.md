@@ -11,7 +11,7 @@
 #### Вариант A: Через Packagist (после публикации)
 ```bash
 # В вашем проекте
-composer require anchor/docs-coverage-analyzer --dev
+composer require malaxitlmax/anchor-docs --dev
 ```
 
 #### Вариант B: Через VCS репозиторий
@@ -22,11 +22,11 @@ composer require anchor/docs-coverage-analyzer --dev
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/yourusername/anchor-docs"
+            "url": "https://github.com/malaxitlmax/anchor-docs"
         }
     ],
     "require-dev": {
-        "anchor/docs-coverage-analyzer": "dev-main"
+        "malaxitlmax/anchor-docs": "dev-main"
     }
 }
 ```
@@ -46,7 +46,7 @@ composer install
         }
     ],
     "require-dev": {
-        "anchor/docs-coverage-analyzer": "*"
+        "malaxitlmax/anchor-docs": "*"
     }
 }
 ```
@@ -55,7 +55,7 @@ composer install
 
 ```bash
 # В корне вашего проекта
-git submodule add https://github.com/yourusername/anchor-docs tools/anchor-docs
+git submodule add https://github.com/malaxitlmax/anchor-docs tools/anchor-docs
 git submodule update --init --recursive
 
 # Установка зависимостей
@@ -68,7 +68,7 @@ chmod +x bin/anchor-docs
 
 ```bash
 # В корне вашего проекта
-git clone https://github.com/yourusername/anchor-docs tools/anchor-docs
+git clone https://github.com/malaxitlmax/anchor-docs tools/anchor-docs
 cd tools/anchor-docs
 composer install --no-dev
 chmod +x bin/anchor-docs
